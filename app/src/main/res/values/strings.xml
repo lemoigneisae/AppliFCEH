@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AppliFCEH</string>
+    <string name="title_activity_joueurs">Joueurs</string>
+    <string name="title_activity_joueurs_b">JoueursB</string>
+    <string name="title_activity_joueurs_c">JoueursC</string>
+</resources>

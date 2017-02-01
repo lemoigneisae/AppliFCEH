@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="joueurs">
+        <item>Romain Coupey</item>
+        <item>Marwan Rorchi</item>
+        <item>Julien Mahaut</item>
+        <item>Loic Gautier</item>
+    </string-array>
+    <string-array name="joueursB">
+        <item>Hugo Delaunay</item>
+        <item>Charles Doris</item>
+        <item>Maxime Bouyer</item>
+        <item>Benjamin Leclerc</item>
+    </string-array>
+    <string-array name="joueursC">
+        <item>Adrien Léonard</item>
+        <item>Matthieu Negroni</item>
+        <item>Kévin Chardine</item>
+        <item>Isaë Le Moigne</item>
+    </string-array>
+
+</resources>
