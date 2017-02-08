@@ -10,8 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.fceh.isaelemoigne.applifceh.Joueurs"
-    tools:showIn="@layout/activity_joueurs">
+    tools:context="com.fceh.isaelemoigne.applifceh.JoueursA"
+    tools:showIn="@layout/activity_joueurs_a">
 
     <ListView
         android:layout_width="match_parent"

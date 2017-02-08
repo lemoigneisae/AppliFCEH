@@ -20,13 +20,15 @@ public class AjoutJoueurs extends AppCompatActivity {
         champ1 = (EditText)findViewById(R.id.editText);
         champ2 = (EditText)findViewById(R.id.editText2);
         champ3 = (EditText)findViewById(R.id.editText3);
-        champ1.setText(getIntent().getStringExtra("clé"));
+        champ1.setText(getIntent().getStringExtra("Nom"));
+        champ1.setText(getIntent().getStringExtra("Poste"));
+        champ1.setText(getIntent().getStringExtra("Numero"));
     }
     public void AjoutJoueurs(View view){
         Intent retour = new Intent();
-        retour.putExtra("PrenomJoueurs",champ1.getText().toString());
-        retour.putExtra("NomJoueurs",champ2.getText().toString());
-        retour.putExtra("DateNaissance",champ3.getText().toString());
+        retour.putExtra("NomJoueurs",champ1.getText().toString());
+        retour.putExtra("PosteJoueurs",champ2.getText().toString());
+        retour.putExtra("Numero",Integer.valueOf(champ3.getText().toString()).intValue());
         setResult(Activity.RESULT_OK, retour);
         finish();
     }
