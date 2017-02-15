@@ -28,7 +28,7 @@ public class Acceuil extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Acceuil.this, Equipes.class));
+                startActivity(new Intent(Acceuil.this, Joueurs.class));
             }
         });
 
@@ -81,14 +81,13 @@ public class Acceuil extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            startActivity(new Intent(Acceuil.this, Equipes.class));
-            //getFragmentManager().beginTransaction().add(R.id.content_acceuil,new Equipes()).addToBackStack(null).commit();
+            getFragmentManager().beginTransaction().add(R.id.content_acceuil,new Joueurs()).addToBackStack(null).commit();
         } else if (id == R.id.nav_gallery) {
-            startActivity(new Intent(Acceuil.this, JoueursA.class));
+
         } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(Acceuil.this, JoueursB.class));
+
         } else if (id == R.id.nav_manage) {
-            startActivity(new Intent(Acceuil.this, JoueursC.class));
+
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
