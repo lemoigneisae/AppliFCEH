@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fceh.isaelemoigne.applifceh.Contact">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:text="Site web : www.fceh.fr
+Facebook : www.facebook.com/fcehfoot/
+Adresse : 10 rue des Résistants
+        50120 Equeurdreville Hainneville
+Téléphone : 02 33 08 08 81
+E-mail : fceh.foot@orange.fr"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/holo_red_dark" />
+</FrameLayout>

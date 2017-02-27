@@ -18,8 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_acceuil"
-        app:menu="@menu/activity_acceuil_drawer" />
+        app:menu="@menu/activity_acceuil_drawer"
+        app:itemTextColor="@android:color/holo_red_dark"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fitsSystemWindows="false" />
 
 </android.support.v4.widget.DrawerLayout>

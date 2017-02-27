@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fceh.isaelemoigne.applifceh.PresentationA">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:text="Voici notre équipe première qui évolue en DHR :
+        Entraineur : Jérôme Brétôt
+        Adjoint : Christophe Gosselin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="textStart" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/equipe1"
+        android:id="@+id/imageView3" />
+</FrameLayout>

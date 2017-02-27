@@ -27,8 +27,8 @@ class MySQLiteHelper  extends SQLiteOpenHelper {
             + " integer primary key autoincrement, " + COLUMN_NOM
             + " text not null, " + COLUMN_PRENOM
             + " text not null, " + COLUMN_POSTE
-            + " text not null, " + COLUMN_EQUIPE
-            + " integer, " + COLUMN_ID
+            + " text not null, " + COLUMN_NUMERO
+            + " integer, " + COLUMN_EQUIPE
             + " integer);";
 
     public MySQLiteHelper(Context context) {

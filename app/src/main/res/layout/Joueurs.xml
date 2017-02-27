@@ -5,10 +5,6 @@
     tools:context="com.fceh.isaelemoigne.applifceh.Joueurs">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
     <ListView
         android:layout_width="match_parent"
@@ -25,6 +21,7 @@
         android:id="@+id/spinner"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
 
 </RelativeLayout>

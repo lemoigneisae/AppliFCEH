@@ -28,7 +28,7 @@ public class Acceuil extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Acceuil.this, Joueurs.class));
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new ClassementA()).addToBackStack(null).commit();
             }
         });
 
@@ -40,6 +40,8 @@ public class Acceuil extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        getSupportFragmentManager().beginTransaction().add(R.id.content_acceuil, new AcceuilFragment()).commit();
     }
 
     @Override
@@ -80,18 +82,19 @@ public class Acceuil extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            getFragmentManager().beginTransaction().add(R.id.content_acceuil,new Joueurs()).addToBackStack(null).commit();
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.nav_acceuil) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new AcceuilFragment()).addToBackStack(null).commit();
+        }
+        else if (id == R.id.nav_joueurs) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new Joueurs()).addToBackStack(null).commit();
+        } else if (id == R.id.nav_presentA) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil, new PresentationA()).addToBackStack(null).commit();
+        } else if (id == R.id.nav_resultatA) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new ResultatA()).addToBackStack(null).commit();
+        } else if (id == R.id.nav_classementA) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new ClassementA()).addToBackStack(null).commit();
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new Contact()).addToBackStack(null).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

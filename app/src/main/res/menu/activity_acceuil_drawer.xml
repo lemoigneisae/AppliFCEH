@@ -3,33 +3,38 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_acceuil"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Acceuil" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_joueurs"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Les joueurs" />
     </group>
+
+    <item android:title="Équipes A">
+        <menu>
+            <item
+                android:id="@+id/nav_presentA"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Présentation" />
+            <item
+            android:id="@+id/nav_resultatA"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Resultats" />
+            <item
+                android:id="@+id/nav_classementA"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Classements" />
+        </menu>
+    </item>
 
     <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Contact" />
         </menu>
     </item>
 
