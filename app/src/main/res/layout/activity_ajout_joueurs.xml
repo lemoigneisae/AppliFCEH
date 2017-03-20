@@ -11,55 +11,14 @@
     tools:context="com.fceh.isaelemoigne.applifceh.AjoutJoueurs">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView"
-        android:layout_above="@+id/editText"
-        android:layout_alignParentTop="true" />
-
-    <Button
-        android:text="Enregistrer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button6"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp"
-        android:onClick="AjoutJoueurs" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginTop="69dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/editText"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="32dp"
-        android:id="@+id/editText2"
-        android:hint="Poste" />
-
-    <TextView
         android:text="Nouveau joueur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -67,8 +26,76 @@
         android:inputType="number"
         android:ems="10"
         android:hint="Numero"
-        android:layout_centerVertical="true"
+        android:id="@+id/editText3"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:hint="Équipe"
+        android:id="@+id/editText4"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:onClick="AjoutJoueurs"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="Poste"
+        android:layout_above="@+id/editText3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/editText3" />
+        android:layout_marginBottom="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:hint="Prénom"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Nom"
+        android:id="@+id/editText"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="id"
+        android:id="@+id/editText6"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
 </RelativeLayout>

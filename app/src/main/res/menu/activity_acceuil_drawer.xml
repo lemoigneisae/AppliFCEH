@@ -29,12 +29,16 @@
         </menu>
     </item>
 
-    <item android:title="Communicate">
+    <item android:title="Nous contacter">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Contact" />
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Localisation" />
         </menu>
     </item>
 

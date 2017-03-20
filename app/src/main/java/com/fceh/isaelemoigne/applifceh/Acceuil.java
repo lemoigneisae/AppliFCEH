@@ -1,5 +1,6 @@
 package com.fceh.isaelemoigne.applifceh;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -28,7 +29,7 @@ public class Acceuil extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new ClassementA()).addToBackStack(null).commit();
+                startActivity(new Intent(Acceuil.this,AjoutJoueurs.class));
             }
         });
 
@@ -70,6 +71,9 @@ public class Acceuil extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent retour = new Intent(this, SettingsActivity.class);
+            setResult(Activity.RESULT_OK, retour);
+            startActivityForResult(retour,1);
             return true;
         }
 
@@ -95,6 +99,10 @@ public class Acceuil extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new ClassementA()).addToBackStack(null).commit();
         } else if (id == R.id.nav_share) {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_acceuil,new Contact()).addToBackStack(null).commit();
+        } else if (id == R.id.nav_map) {
+            Intent retour = new Intent(this, MapsActivity.class);
+            setResult(Activity.RESULT_OK, retour);
+            startActivityForResult(retour,1);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

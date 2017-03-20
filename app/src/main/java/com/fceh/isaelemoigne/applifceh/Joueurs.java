@@ -69,7 +69,27 @@ public class Joueurs extends Fragment {
             }
         });
 
+        liste.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent envoie = new Intent(getActivity(), AjoutJoueurs.class);
+                envoie.putExtra("id", ((Joueur)parent.getItemAtPosition(position)).getId());
+                envoie.putExtra("nom", ((Joueur)parent.getItemAtPosition(position)).getNom());
+                envoie.putExtra("prenom", ((Joueur)parent.getItemAtPosition(position)).getPrenom());
+                envoie.putExtra("poste", ((Joueur)parent.getItemAtPosition(position)).getPoste());
+                envoie.putExtra("numero", ((Joueur)parent.getItemAtPosition(position)).getNumero());
+                envoie.putExtra("equipe", ((Joueur)parent.getItemAtPosition(position)).getEquipe());
+                startActivityForResult(envoie, 0);
+            }
+        });
+
         return v;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        equipes.getOnItemSelectedListener().onItemSelected(null,equipes.getSelectedView(),
+                equipes.getSelectedItemPosition(),equipes.getSelectedItemId());
     }
 
     @Override
