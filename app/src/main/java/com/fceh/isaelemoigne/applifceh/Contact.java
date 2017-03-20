@@ -57,8 +57,8 @@ public class Contact extends Fragment {
         badgeMedium.setImageResource(R.drawable.ic_menu_gallery);
 
         QuickContactBadge badgeMedium2 = (QuickContactBadge) view.findViewById(R.id.quickContactBadge2);
-        badgeMedium.assignContactFromEmail("fceh.foot@orange.fr", true);
-        badgeMedium.setImageResource(R.drawable.ic_menu_share);
+        badgeMedium2.assignContactFromEmail("fceh.foot@orange.fr", true);
+        badgeMedium2.setImageResource(R.drawable.ic_menu_share);
 
         return view;
     }
